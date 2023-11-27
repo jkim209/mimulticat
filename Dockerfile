@@ -42,7 +42,7 @@ RUN R -e "remotes::install_github('zmjones/edarf', subdir = 'pkg')"
 RUN R -e "remotes::install_github('Zhiwen-Owen-Jiang/MiRKATMC')"
 RUN R -e "remotes::install_github('vegandevs/vegan')"
 
-Run R -e "remotes::install_version('zCompositions', version = '1.4.0.1', repos = "http://cran.us.r-project.org")"
+Run R -e "remotes::install_version('zCompositions', version = '1.4.0.1', repos = 'http://cran.us.r-project.org')"
 
 RUN mkdir /root/app
 COPY app /root/app
