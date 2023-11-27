@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN R -e "install.packages(c('shiny', 'BiocManager', 'rmarkdown'), repos='https://cloud.r-project.org/')"
 Run R -e "install.packages(c('seqinr', 'shinydashboard', 'tidyverse', 'plotly', 'shinyWidgets', 'shinyjs', 'googleVis', 'xtable'), repos = 'https://cloud.r-project.org/')"
-RUN R -e "install.packages(c('DT', 'htmltools', 'phangorn', 'bios2mds', 'zip', 'ape', 'zCompositions', 'compositions', 'stringr', 'caret', 'ggplot2', 'randomForest'), repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages(c('DT', 'htmltools', 'phangorn', 'bios2mds', 'zip', 'ape', 'compositions', 'stringr', 'caret', 'ggplot2', 'randomForest'), repos='https://cloud.r-project.org/')"
 RUN R -e "install.packages(c('data.table', 'xgboost', 'SHAPforxgboost', 'fontawesome', 'grid', 'ggplotify', 'remotes', 'doParallel', 'reshape2', 'fossil'), repos='https://cloud.r-project.org/')"
 Run R -e "install.packages(c('proxy', 'ecodist', 'GUniFrac', 'picante', 'FSA', 'tibble', 'forestplot', 'VGAM', 'rgl', 'MiRKAT'), repos='https://cloud.r-project.org/')"
 
