@@ -203,6 +203,7 @@ server = function(input, output, session){
   source("MiDataProc.ML.RF.R")
   source("MiDataProc.ML.XGB.R")
   source("setSliderColor.R")
+  source("shinyDashboardThemeDIY.R")
   
   ## REACTIVE VALUES -------
   
