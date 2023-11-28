@@ -62,6 +62,7 @@ COPY app/MiDataProc.ML.RF.R /root/app
 COPY app/MiDataProc.ML.XGB.R /root/app
 COPY app/MiDataProc.Taxa.R /root/app
 COPY app/setSliderColor.R /root/app
+COPY app/shinyDashboardThemeDIY.R /root/app
 
 EXPOSE 5512
 
