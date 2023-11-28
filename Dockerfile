@@ -28,15 +28,15 @@ RUN apt-get update && apt-get install -y \
     libmpfr-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && apt-get install -y \
-    libcurl4-openssl-dev \
-    unixodbc-dev \
-    libmariadb-dev \
-    libfontconfig1-dev \
-    libfreetype6-dev \
-    libpng-dev \
-    libjpeg-dev \
-    && rm -rf /var/lib/apt/lists/*
+# RUN apt-get update && apt-get install -y \
+#    libcurl4-openssl-dev \
+#    unixodbc-dev \
+#    libmariadb-dev \
+#    libfontconfig1-dev \
+#    libfreetype6-dev \
+#    libpng-dev \
+#    libjpeg-dev \
+#    && rm -rf /var/lib/apt/lists/*
 
 RUN R -e "install.packages(c('shiny', 'BiocManager', 'rmarkdown'), repos='https://cloud.r-project.org/')"
 Run R -e "install.packages(c('seqinr', 'shinydashboard', 'tidyverse', 'plotly', 'shinyWidgets', 'shinyjs', 'googleVis', 'xtable'), repos = 'https://cloud.r-project.org/')"
