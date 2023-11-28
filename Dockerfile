@@ -22,10 +22,14 @@ RUN apt-get update && apt-get install -y \
     libharfbuzz-dev \
     libfribidi-dev \
     libgdal-dev \
-    && rm -rf /var/lib/apt/lists/*
-    
-RUN apt-get update && apt-get install -y \
     libmpfr-dev \
+    libcurl4-openssl-dev \
+    unixodbc-dev \
+    libmariadb-dev \
+    libfontconfig1-dev \
+    libfreetype6-dev \
+    libpng-dev \
+    libjpeg-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN R -e "install.packages(c('shiny', 'BiocManager', 'rmarkdown'), repos='https://cloud.r-project.org/')"
